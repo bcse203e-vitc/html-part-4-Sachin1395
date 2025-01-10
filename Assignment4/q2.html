@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Event Registeration Form </h2>
+    <form action="/reg" method="post">
+        <label for="name">Enter your Name</label><br>
+        <input type="text" id="name" name="=name" required><br><br>
+
+        <label for="email-id">Enter your Email Id</label><br>
+        <input type="email" id="email-id" name="=email-id" placeholder="example@gmail.com"><br><br>
+
+        <label for="phone">Enter your Phone Number</label><br>
+        <input type="tel" id="phone" name="=phone" required><br><br>
+        <input type="radio" name="gender" id="male">
+        <input type="radio" name="gender" id="male">
+        
+
+        <label for="age-group">Select your Age-group</label><br>
+        <select name="age-group" id="age-group">
+            
+            <option value="Male">3-18 years</option>
+            <option value="Female">19-30 years</option>
+            <option value="Other">30+ years</option>
+        
+        </select>
+        <p>Topic of Interests</p>
+        <input type="checkbox" id="music" name="music" value="Music">
+        <label for="music">Music</label>
+
+        <input type="checkbox" id="art" name="art" value="Art">
+        <label for="art">Art</label>
+
+        <input type="checkbox" id="cinema" name="cinema" value="Cinema">
+        <label for="cinema">Cinema</label><br><br>
+
+        <label for="comments">Additional Comments</label><br>
+        <textarea name="comments" id="comments">Add your comments</textarea><br><br>
+
+
+        <button type="submit"> Submit</button>
+    </form>
+</body>
+</html>
