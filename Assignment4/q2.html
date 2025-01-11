@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+</head>
+<body>
+    <h2>Event Registration Form</h2>
+    <form action="/reg" method="post">
+        <label for="name">Enter your Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email-id">Enter your Email Id:</label><br>
+        <input type="email" id="email-id" name="email-id" placeholder="example@gmail.com" required><br><br>
+
+        <label for="phone">Enter your Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" id="male" value="Male">
+        <label for="male">Male</label><br>
+        <input type="radio" name="gender" id="female" value="Female">
+        <label for="female">Female</label><br>
+        <input type="radio" name="gender" id="other" value="Other">
+        <label for="other">Other</label><br><br>
+
+        <label for="age-group">Select your Age Group:</label><br>
+        <select name="age-group" id="age-group" required>
+            <option value="">--Select Age Group--</option>
+            <option value="3-18">3-18 years</option>
+            <option value="19-30">19-30 years</option>
+            <option value="30+">30+ years</option>
+        </select><br><br>
+
+        <label>Topics of Interest:</label><br>
+        <input type="checkbox" id="music" name="topics" value="Music">
+        <label for="music">Music</label><br>
+        <input type="checkbox" id="art" name="topics" value="Art">
+        <label for="art">Art</label><br>
+        <input type="checkbox" id="cinema" name="topics" value="Cinema">
+        <label for="cinema">Cinema</label><br><br>
+
+        <label for="comments">Additional Comments:</label><br>
+        <textarea name="comments" id="comments" placeholder="Add your comments here"></textarea><br><br>
+
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
